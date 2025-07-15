@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF OCR Search</title>
+</head>
+<body>
+    <h1>Search Word in PDF</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload PDF:</label>
+        <input type="file" name="file" required><br><br>
+
+        <label>Search for word:</label>
+        <input type="text" name="search_term" required><br><br>
+
+        <input type="submit" value="Search">
+    </form>
+
+    {% if pages %}
+        <h2>Results for "{{ term }}"</h2>
+        <p>Found on page(s): {{ pages | join(', ') }}</p>
+    {% elif term %}
+        <h2>No results found for "{{ term }}"</h2>
+    {% endif %}
+</body>
+</html>
