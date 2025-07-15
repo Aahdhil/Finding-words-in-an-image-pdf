@@ -1,6 +1,6 @@
 # Finding-words-in-an-image-pdf
 
-A simple Flask web app to search for words in image-based PDFs using Tesseract OCR and pdf2image.
+A simple Flask web app to search for words in image-based PDFs using Tesseract OCR and pdf2image. The project is still work in progress.
 
 Requirements:
 Tesseract OCR
